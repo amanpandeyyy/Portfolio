@@ -276,8 +276,7 @@
         • 📧 <strong>Email:</strong> <a href="mailto:${AMAN_KB.email}">${AMAN_KB.email}</a><br>
         • 📱 <strong>Phone:</strong> <a href="tel:${AMAN_KB.phone.replace(/[^0-9+]/g, '')}">${AMAN_KB.phone}</a><br>
         • 💼 <strong>LinkedIn:</strong> <a href="${AMAN_KB.linkedin}" target="_blank" rel="noopener">linkedin.com/in/aman-pandey</a><br>
-        • 🐙 <strong>GitHub:</strong> <a href="${AMAN_KB.github}" target="_blank" rel="noopener">github.com/amanpandeyyy</a><br>
-        • 📍 <strong>Location:</strong> Lucknow / Ayodhya, Uttar Pradesh, India`
+        • 🐙 <strong>GitHub:</strong> <a href="${AMAN_KB.github}" target="_blank" rel="noopener">github.com/amanpandeyyy</a>`
     },
 
     // 12. Education
