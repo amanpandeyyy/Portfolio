@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Pandey — Aspiring AI/ML Engineer & Computer Science Student. Specializing in Python, Deep Learning, Generative AI, RAG Pipelines, and FastAPI." />
+  <meta name="keywords" content="Aman Pandey, AI Engineer, Machine Learning, Generative AI, RAG, PyTorch, LangChain, Portfolio" />
+  <meta name="author" content="Aman Pandey" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aman Pandey — AI/ML Engineer Portfolio" />
+  <meta property="og:description" content="Explore AI/ML projects (DataLens, Echo Notes, MindPulse), GenAI & RAG systems, experience at Amigo India, and download resume." />
+  <meta property="og:url" content="https://amanportfolio-alpha.vercel.app/" />
+
+  <title>Aman Pandey — AI/ML Engineer | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Ambient Ambient Glow Orbs -->
+  <div class="ambient-mesh">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+  </div>
+
+  <!-- Interactive Neural Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand-logo" aria-label="Aman Pandey Home">
+        <div class="brand-icon">
+          <span>&lt;AP/&gt;</span>
+        </div>
+        <div class="brand-name">Aman<span>.ai</span></div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Talk to Agent Trigger Pill -->
+        <button id="navAgentBtn" class="nav-agent-btn" title="Chat with Aman's AI Agent">
+          <span class="nav-agent-dot"></span>
+          <span>Talk to Agent</span>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="assets/Aman_pandey_resume.pdf" download class="btn-nav-resume" id="navResumeDownload">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-text-col">
+          <!-- Availability Pill -->
+          <div class="hero-status-pill">
+            <span class="status-indicator"></span>
+            <span>Available for AI/ML Roles &amp; Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="hero-title-name">Aman Pandey</span>
+          </h1>
+
+          <!-- Typewriter Dynamic Headline -->
+          <div class="hero-typewriter-wrap">
+            <span id="heroTypewriter"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Aspiring <strong>AI/ML Engineer</strong> and Computer Science student passionate about 
+            architecting <strong>production-grade Generative AI applications, RAG pipelines</strong>, 
+            and deep learning systems. Proficient in transforming cutting-edge model architectures 
+            into scalable, reliable software.
+          </p>
+
+          <!-- Primary Actions -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <a href="assets/Aman_pandey_resume.pdf" download class="btn btn-secondary" id="heroResumeDownload">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+
+            <!-- Talk to Agent Hero Button -->
+            <button id="heroAgentBtn" class="btn btn-agent">
+              <span>✨ Talk to my Agent</span>
+            </button>
+          </div>
+
+          <!-- Socials & Connect -->
+          <div class="hero-socials">
+            <a href="https://github.com/amanpandeyyy" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/aman-pandey-a791403b9/" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:amanpandey20506@gmail.com" class="hero-social-link" title="Email Aman">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual AI Architecture Card -->
+        <div class="hero-visual-col">
+          <div class="hero-visual-card">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="term-dot red"></span>
+                <span class="term-dot yellow"></span>
+                <span class="term-dot green"></span>
+              </div>
+              <div class="terminal-title">aman_agent_runtime.py</div>
+              <div class="terminal-badge">Python 3.14 • CUDA Ready</div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="code-line"><span class="code-comment"># Initializing Aman's AI/ML Core</span></div>
+              <div class="code-line"><span class="code-keyword">from</span> agents <span class="code-keyword">import</span> RAGPipeline, TransformerModel</div>
+              <div class="code-line"><span class="code-keyword">from</span> backend <span class="code-keyword">import</span> FastAPI, DockerService</div>
+              <div class="code-line">&nbsp;</div>
+              <div class="code-line">engineer = {</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"name"</span>: <span class="code-str">"Aman Pandey"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"focus"</span>: [<span class="code-str">"GenAI"</span>, <span class="code-str">"RAG"</span>, <span class="code-str">"Transformers"</span>, <span class="code-str">"LLMs"</span>],</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"experience"</span>: <span class="code-str">"ML & GenAI Intern @ Amigo India"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"accolades"</span>: <span class="code-str">"Winner @ Amigo Hackathon 2026"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"status"</span>: <span class="code-str">"Ready to deploy &amp; innovate"</span></div>
+              <div class="code-line">}</div>
+              <div class="code-line"><span class="code-fn">print</span>(<span class="code-str">f"System initialized: {engineer['name']}"</span>)</div>
+
+              <!-- Quick Metrics Grid -->
+              <div class="terminal-stats-grid">
+                <div class="term-stat-box">
+                  <div class="term-stat-label">Production Apps</div>
+                  <div class="term-stat-value">3+ Deployed</div>
+                </div>
+                <div class="term-stat-box">
+                  <div class="term-stat-label">Vector RAG Engines</div>
+                  <div class="term-stat-value">LangChain + Chroma</div>
+                </div>
+                <div class="term-stat-box">
+                  <div class="term-stat-label">Hackathon Record</div>
+                  <div class="term-stat-value">1st Prize Winner</div>
+                </div>
+                <div class="term-stat-box">
+                  <div class="term-stat-label">Certifications</div>
+                  <div class="term-stat-value">4 Verified</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & EDUCATION SECTION ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Profile &amp; Background</div>
+          <h2 class="section-title">Engineering Intelligent Systems</h2>
+          <p class="section-desc">
+            Bridging theoretical machine learning concepts with robust software engineering 
+            to create impactful AI tools.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Summary & Stats -->
+          <div class="about-card">
+            <p>
+              I am an aspiring <strong>AI/ML Engineer</strong> with a solid foundation in Python, 
+              Machine Learning algorithms, and Deep Learning architectures including 
+              <strong>Transformers, CNNs, and RNNs</strong>.
+            </p>
+            <p>
+              My hands-on journey includes engineering <strong>Generative AI applications</strong> 
+              utilizing Large Language Models (LLMs), production RAG pipelines, and OpenAI APIs, 
+              paired with <strong>FastAPI and Flask</strong> for reliable backend serving. 
+              I am proficient in end-to-end model evaluation, Git workflows, and containerization 
+              using <strong>Docker and Kubernetes</strong> to build scalable, production-ready AI solutions.
+            </p>
+
+            <!-- Stat Counters -->
+            <div class="stats-counter-grid">
+              <div class="stat-card">
+                <div class="stat-icon">🚀</div>
+                <div>
+                  <div class="stat-num">3+</div>
+                  <div class="stat-text">Fullstack AI Projects</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon">💼</div>
+                <div>
+                  <div class="stat-num">1</div>
+                  <div class="stat-text">Industry ML Internship</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <div>
+                  <div class="stat-num">1st</div>
+                  <div class="stat-text">Hackathon Winner 2026</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon">📜</div>
+                <div>
+                  <div class="stat-num">4+</div>
+                  <div class="stat-text">Specialized Certifications</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="education-wrap">
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #fff; margin-bottom: 6px;">
+              Academic Journey
+            </h3>
+
+            <div class="edu-card">
+              <div class="edu-header">
+                <div class="edu-institution">SMS Lucknow</div>
+                <div class="edu-year">2023 — 2027</div>
+              </div>
+              <div class="edu-degree">Bachelor of Technology in Computer Science and Engineering</div>
+              <div class="edu-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Lucknow, Uttar Pradesh</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-header">
+                <div class="edu-institution">S.S.V Inter College</div>
+                <div class="edu-year">2021 — 2023</div>
+              </div>
+              <div class="edu-degree">Intermediate (XIIth), Science Stream</div>
+              <div class="edu-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Ayodhya, Uttar Pradesh</span>
+              </div>
+            </div>
+
+            <!-- Fast Ask Agent Tip -->
+            <div style="background: rgba(168, 85, 247, 0.08); border: 1px dashed rgba(168, 85, 247, 0.3); border-radius: 14px; padding: 16px; margin-top: 6px;">
+              <p style="font-size: 0.85rem; color: #e9d5ff; margin: 0; display: flex; align-items: center; justify-content: space-between;">
+                <span>Want to know more about my coursework or tech stack?</span>
+                <button class="agent-chip" data-query="Tell me about Aman's education and background">Ask Agent ✦</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS MATRIX SECTION ==================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Technical Arsenal</div>
+          <h2 class="section-title">Core Skills &amp; Technologies</h2>
+          <p class="section-desc">
+            Equipped with modern AI/ML frameworks, Generative AI tooling, and backend pipelines 
+            for high-performance intelligent applications.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- GenAI & NLP -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🤖</div>
+              <div class="skill-cat-title">Generative AI &amp; NLP</div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag highlight">GenAI</span>
+              <span class="skill-tag highlight">LLMs</span>
+              <span class="skill-tag highlight">RAG Pipelines</span>
+              <span class="skill-tag highlight">LangChain</span>
+              <span class="skill-tag highlight">LangGraph</span>
+              <span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">OpenAI APIs</span>
+              <span class="skill-tag">Mistral AI</span>
+              <span class="skill-tag">Whisper (STT)</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Machine & Deep Learning -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧠</div>
+              <div class="skill-cat-title">Machine &amp; Deep Learning</div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag highlight">Transformers</span>
+              <span class="skill-tag highlight">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">CNNs</span>
+              <span class="skill-tag">RNNs</span>
+              <span class="skill-tag">GANs</span>
+              <span class="skill-tag">Supervised Learning</span>
+              <span class="skill-tag">Unsupervised Learning</span>
+              <span class="skill-tag">Isolation Forest</span>
+            </div>
+          </div>
+
+          <!-- Languages & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚡</div>
+              <div class="skill-cat-title">Languages &amp; Backend</div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag highlight">Python</span>
+              <span class="skill-tag highlight">SQL</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Pydantic</span>
+            </div>
+          </div>
+
+          <!-- Data Engineering & DevOps -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🛠️</div>
+              <div class="skill-cat-title">Data &amp; DevOps</div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag highlight">DuckDB</span>
+              <span class="skill-tag highlight">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">SciPy</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Feature Engineering</span>
+              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Featured Portfolio</div>
+          <h2 class="section-title">Production AI &amp; ML Projects</h2>
+          <p class="section-desc">
+            Real-world systems engineered from end-to-end data ingestion to interactive live cloud deployment.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="genai">Generative AI &amp; RAG</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning &amp; Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: DataLens -->
+          <div class="project-card" data-category="ml genai">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">AI Data Analyst</span>
+                <span class="project-live-indicator">Live on Render</span>
+              </div>
+
+              <h3 class="project-title">DataLens</h3>
+              <div class="project-subtitle">Automated AI Data Cleaning, Anomaly Detection &amp; NL-to-SQL</div>
+
+              <p class="project-description">
+                An intelligent analytics platform that transforms raw CSV/XLSX datasets into actionable 
+                executive insights through automated cleaning, statistical analysis, and interactive visualizations.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Developed scalable analytics engine using DuckDB, Pandas, SciPy, and Scikit-Learn.</li>
+                <li>Supports SQL querying, correlation analysis, and Isolation Forest-based anomaly detection.</li>
+                <li>Implemented Natural Language-to-SQL querying and executive PDF/Excel report exports.</li>
+              </ul>
+
+              <div class="project-stack-wrap">
+                <span class="stack-pill">React</span>
+                <span class="stack-pill">FastAPI</span>
+                <span class="stack-pill">DuckDB</span>
+                <span class="stack-pill">Pandas</span>
+                <span class="stack-pill">Scikit-Learn</span>
+                <span class="stack-pill">SQLite</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://datalens-2.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-btn primary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/amanpandeyyy/DataLens" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Echo Notes -->
+          <div class="project-card" data-category="genai">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">Meeting Intelligence</span>
+                <span class="project-live-indicator">Live on Render</span>
+              </div>
+
+              <h3 class="project-title">Echo Notes</h3>
+              <div class="project-subtitle">AI Meeting Assistant with Multilingual RAG &amp; Summarization</div>
+
+              <p class="project-description">
+                End-to-end meeting intelligence platform converting YouTube audio into structured transcripts, 
+                automated summaries, and an interactive vector Q&amp;A system.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Audio ingestion pipeline using yt-dlp &amp; FFmpeg, integrating Whisper &amp; Sarvam AI for transcription.</li>
+                <li>RAG pipeline using Hugging Face Sentence Transformers &amp; ChromaDB for semantic vector search.</li>
+                <li>Integrated Mistral AI to extract key action items with a modular Streamlit UI.</li>
+              </ul>
+
+              <div class="project-stack-wrap">
+                <span class="stack-pill">yt-dlp</span>
+                <span class="stack-pill">FFmpeg</span>
+                <span class="stack-pill">Whisper</span>
+                <span class="stack-pill">ChromaDB</span>
+                <span class="stack-pill">Mistral AI</span>
+                <span class="stack-pill">Streamlit</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://echo-notes-hla1.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-btn primary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/amanpandeyyy/Echo-Notes" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: MindPulse -->
+          <div class="project-card" data-category="ml">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">Predictive ML</span>
+                <span class="project-live-indicator">Live on Render</span>
+              </div>
+
+              <h3 class="project-title">MindPulse</h3>
+              <div class="project-subtitle">Student Wellness Scoring &amp; Production Inference Pipeline</div>
+
+              <p class="project-description">
+                End-to-end machine learning application that predicts student mental wellness scores 
+                from academic, behavioral, and lifestyle factors using a Random Forest predictive model.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Production inference pipeline with Scikit-Learn, FastAPI, and Pydantic with automated preprocessing.</li>
+                <li>Feature transformation and RESTful model serving with low latency.</li>
+                <li>Responsive interactive web dashboard providing personalized wellness assessments.</li>
+              </ul>
+
+              <div class="project-stack-wrap">
+                <span class="stack-pill">Scikit-Learn</span>
+                <span class="stack-pill">FastAPI</span>
+                <span class="stack-pill">Pandas</span>
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">Pydantic</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://mind-pulse-uwef.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-btn primary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/amanpandeyyy/MindPulse" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & LEADERSHIP SECTION ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Career Track</div>
+          <h2 class="section-title">Professional Experience &amp; Leadership</h2>
+          <p class="section-desc">
+            Demonstrated engineering execution in enterprise RAG development and campus leadership.
+          </p>
+        </div>
+
+        <div class="experience-layout">
+          <!-- Professional Experience Timeline -->
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #fff; margin-bottom: 20px;">
+              Industry Experience
+            </h3>
+
+            <div class="timeline-container">
+              <div class="timeline-card">
+                <div class="timeline-node"></div>
+                <div class="exp-header">
+                  <div class="exp-role">Machine Learning &amp; Generative AI Intern</div>
+                  <div class="exp-period">June 2026 — July 2026</div>
+                </div>
+                <div class="exp-company">
+                  <span>🏢 Amigo India</span>
+                  <span style="font-size: 0.8rem; color: var(--text-dim);">(Remote)</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Architected an internal prototype <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline 
+                    utilizing <strong>LangChain, LangGraph, and ChromaDB</strong> vector search to optimize context retrieval for production workflows.
+                  </li>
+                  <li>
+                    Designed and evaluated prompt engineering strategies across iterative LLM experiments in 
+                    Jupyter Notebook, improving response reliability and substantially reducing experimentation turnaround time.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campus Leadership -->
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #fff; margin-bottom: 20px;">
+              Campus Leadership
+            </h3>
+
+            <div class="about-card" style="padding: 28px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: #fff;">
+                  Treasurer — Abhivyakti Club
+                </h4>
+                <span class="exp-period" style="font-size: 0.75rem;">June 2026 — Present</span>
+              </div>
+              <div style="font-size: 0.95rem; color: var(--primary); font-weight: 600; margin-bottom: 14px;">
+                SMS Lucknow
+              </div>
+              <p style="font-size: 0.925rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0;">
+                Oversaw financial operations, budget allocation, and expense management for institute-level 
+                events and club activities, ensuring smooth execution and strategic resource distribution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & AWARDS SECTION ==================== -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Recognition &amp; Honors</div>
+          <h2 class="section-title">Achievements</h2>
+          <p class="section-desc">
+            Competitive honors recognizing engineering innovation, problem-solving, and AI execution.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Amigo India Hackathon Winner -->
+          <div class="achievement-card">
+            <div class="achieve-badge">🥇 1st Prize Winner</div>
+            <h3 class="achieve-title">Amigo India Hackathon 2026</h3>
+            <p class="achieve-desc">
+              Secured 1st Prize at the national Amigo India Hackathon 2026 by developing an innovative, 
+              scalable AI-powered solution evaluated by industry judges for architectural excellence and business impact.
+            </p>
+            <a href="https://lnkd.in/p/gfFvQjQH" target="_blank" rel="noopener noreferrer" class="achieve-link">
+              <span>View Official Award Verification</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-desc">
+            Industry-recognized credentials certifying proficiency across AI, Machine Learning, Data Analytics, and LLM Engineering.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: Infosys AI & ML -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-row">
+                <div class="cert-icon">🤖</div>
+                <span class="cert-status">Verified</span>
+              </div>
+              <h3 class="cert-name">Artificial Intelligence and Machine Learning</h3>
+              <div class="cert-issuer">Issued by Infosys Springboard</div>
+              <p class="cert-detail">
+                Comprehensive training covering supervised learning, deep learning, model evaluation, 
+                and applied AI production workflows.
+              </p>
+            </div>
+            <a href="https://drive.google.com/file/d/1W7l5h0obfKj9vH_8Hk9lRNjm2hNpB1ke/view?pli=1" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <!-- Cert 2: Physics Wallah & Microsoft Data Analytics -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-row">
+                <div class="cert-icon">📊</div>
+                <span class="cert-status">Verified</span>
+              </div>
+              <h3 class="cert-name">Basic of Data Analytics</h3>
+              <div class="cert-issuer">Issued by Physics Wallah &amp; Microsoft</div>
+              <p class="cert-detail">
+                Bootcamp covering core data analytics fundamentals, relational SQL queries, data cleaning, 
+                and business intelligence visualization techniques.
+              </p>
+            </div>
+            <a href="https://pwskills.com/learn/certificate/e6e194f0-c063-4191-a6f8-b2e06e6ff388/" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <!-- Cert 3: Generative AI & LLM Systems Specialization -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-row">
+                <div class="cert-icon">🧬</div>
+                <span class="cert-status">Specialization</span>
+              </div>
+              <h3 class="cert-name">Generative AI &amp; LLM Systems Specialization</h3>
+              <div class="cert-issuer">Issued by DeepLearning.AI / Coursera</div>
+              <p class="cert-detail">
+                Hands-on mastery of Retrieval-Augmented Generation (RAG), vector embeddings, LangChain, 
+                LangGraph, and production prompt engineering architectures.
+              </p>
+            </div>
+            <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <!-- Cert 4: Skill India & N.S.D.C -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-row">
+                <div class="cert-icon">⚡</div>
+                <span class="cert-status">Verified</span>
+              </div>
+              <h3 class="cert-name">AI — Data Engineering Analyst</h3>
+              <div class="cert-issuer">Issued by Skill India &amp; N.S.D.C</div>
+              <p class="cert-detail">
+                National certification issued by Skill India and N.S.D.C (National Skill Development Corporation) 
+                focusing on data transformation pipelines, automated feature preprocessing, and scalable AI workflows.
+              </p>
+            </div>
+            <a href="assets/certificate_30abc684-c033-40a9-836b-caa3d4b7be33.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME DOWNLOAD SPOTLIGHT ==================== -->
+    <section id="resume-hub" class="section">
+      <div class="container">
+        <div class="resume-spotlight-card">
+          <!-- Details -->
+          <div>
+            <div class="section-tag">Direct Access</div>
+            <h2 class="resume-heading">Curriculum Vitae / Resume</h2>
+            <p class="resume-desc">
+              Looking for a comprehensive technical breakdown of my projects, internships, 
+              publications, and engineering skills? Download my complete, single-page ATS-optimized resume.
+            </p>
+
+            <div class="resume-tags-row">
+              <span class="resume-tag">ATS-Optimized</span>
+              <span class="resume-tag">LaTeX Typeset</span>
+              <span class="resume-tag">AI/ML Focus</span>
+              <span class="resume-tag">Updated 2026</span>
+            </div>
+
+            <div class="resume-btn-group">
+              <a href="assets/Aman_pandey_resume.pdf" download class="btn btn-primary" id="spotlightDownloadBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <button class="btn btn-secondary" id="openResumeModalBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Quick Preview</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- File Card Preview -->
+          <div class="resume-file-preview-box">
+            <div class="resume-pdf-icon">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <div class="resume-file-name">Aman_Pandey_Resume.pdf</div>
+            <div class="resume-file-meta">Target: assets/Aman_pandey_resume.pdf</div>
+            <a href="assets/Aman_pandey_resume.pdf" download class="btn btn-sm btn-primary" style="width: 100%;">
+              <span>Get Copy Now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">Let's Connect</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">
+            Open to AI/ML engineering roles, internships, research collaborations, and project discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Card -->
+          <div class="contact-info-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 8px;">
+              Contact Information
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+              Feel free to reach out directly via email, phone, or LinkedIn. I typically reply within 24 hours.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-meta">
+                  <span>Email</span>
+                  <div style="display: flex; align-items: center;">
+                    <a href="mailto:amanpandey20506@gmail.com">amanpandey20506@gmail.com</a>
+                    <button class="copy-pill-btn copy-email-btn" title="Copy email address">Copy</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-meta">
+                  <span>Phone / WhatsApp</span>
+                  <a href="tel:+917233990093">+91-7233990093</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-meta">
+                  <span>Location</span>
+                  <p>Lucknow / Ayodhya, Uttar Pradesh, India</p>
+                </div>
+              </div>
+
+              <!-- Social Profiles -->
+              <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-meta">
+                  <span>Networks</span>
+                  <div style="display: flex; gap: 14px; margin-top: 4px;">
+                    <a href="https://www.linkedin.com/in/aman-pandey-a791403b9/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">LinkedIn</a>
+                    <span style="color: var(--text-dim);">•</span>
+                    <a href="https://github.com/amanpandeyyy" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 8px;">
+              Send a Direct Message
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+              Drop me a note and I will get right back to you.
+            </p>
+
+            <form id="portfolioContactForm">
+              <div class="form-group">
+                <label class="form-label" for="senderName">Your Name</label>
+                <input type="text" id="senderName" class="form-control" placeholder="e.g. John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderEmail">Your Email Address</label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="john@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderMessage">Message</label>
+                <textarea id="senderMessage" class="form-control" placeholder="Hello Aman, I reviewed your Echo Notes project and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-name" style="font-size: 1.1rem; font-family: var(--font-heading); font-weight: 700;">
+          Aman<span>.ai</span>
+        </div>
+        <div class="footer-copy">
+          © 2026 Aman Pandey — Engineered with modern AI/ML aesthetics.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="assets/Aman_pandey_resume.pdf" download class="footer-link">Download CV</a>
+        <a href="https://github.com/amanpandeyyy" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/aman-pandey-a791403b9/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== "TALK TO MY AGENT" FLOATING BUTTON & DRAWER ==================== -->
+  <!-- Floating Action Button -->
+  <button id="agentFab" class="agent-fab" aria-label="Talk to Aman's AI Agent">
+    <span class="agent-fab-icon">🤖</span>
+    <span>Talk to Agent</span>
+    <span class="agent-fab-ping"></span>
+  </button>
+
+  <!-- Interactive AI Assistant Drawer -->
+  <div id="agentDrawer" class="agent-drawer" role="dialog" aria-modal="true" aria-label="Aman's AI Agent Chat Window">
+    <!-- Header -->
+    <div class="agent-header">
+      <div class="agent-header-left">
+        <div class="agent-avatar">
+          <span>AP</span>
+          <span class="agent-status-badge"></span>
+        </div>
+        <div class="agent-info">
+          <h4>Aman's AI Agent</h4>
+          <span>✦ Powered by Aman's Profile Knowledge Base</span>
+        </div>
+      </div>
+      <button id="agentCloseBtn" class="agent-close-btn" aria-label="Close chat">✕</button>
+    </div>
+
+    <!-- Chat Messages Body -->
+    <div id="agentChatBody" class="agent-chat-body">
+      <!-- Initial Welcome Bubble -->
+      <div class="chat-bubble bot">
+        👋 Hi there! I am <strong>Aman's AI Agent</strong>.<br><br>
+        Ask me anything about Aman's <strong>RAG &amp; GenAI experience</strong>, his projects (<em>DataLens</em>, <em>Echo Notes</em>, <em>MindPulse</em>), his internship at <strong>Amigo India</strong>, or how to contact him.
+      </div>
+
+      <!-- Suggestion Chips -->
+      <div class="agent-chips-wrap">
+        <button class="agent-chip" data-query="Tell me about Aman's background">Who is Aman?</button>
+        <button class="agent-chip" data-query="What is Aman's experience with RAG and LLMs?">RAG &amp; LLM Skills</button>
+        <button class="agent-chip" data-query="Recommend only one project">Recommend 1 Project ★</button>
+        <button class="agent-chip" data-query="What did Aman do at Amigo India?">Amigo Internship</button>
+        <button class="agent-chip" data-query="What certifications does Aman have?">Certifications</button>
+        <button class="agent-chip" data-query="How can I download Aman's resume?">Download Resume</button>
+        <button class="agent-chip" data-query="How can I contact Aman?">Contact Details</button>
+      </div>
+    </div>
+
+    <!-- Chat Input Form -->
+    <div class="agent-chat-footer">
+      <form id="agentInputForm" class="agent-input-form">
+        <input 
+          type="text" 
+          id="agentInputField" 
+          class="agent-input-field" 
+          placeholder="Ask a question about Aman..." 
+          autocomplete="off"
+        />
+        <button type="submit" class="agent-send-btn" title="Send query">
+          ➤
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME QUICK PREVIEW MODAL ==================== -->
+  <div id="resumeModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="resume-modal-card">
+      <div class="modal-header">
+        <div class="modal-title">Aman Pandey — Resume Highlights</div>
+        <button id="closeResumeModalBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-summary-box">
+          <h4>Executive Profile</h4>
+          <p>
+            Aspiring AI/ML Engineer with a solid foundation in Python, Machine Learning, and Deep Learning architectures 
+            (Transformers, CNNs, RNNs). Hands-on experience developing Generative AI applications utilizing LLMs, RAG pipelines, 
+            and OpenAI APIs, paired with FastAPI/Flask for backend integration.
+          </p>
+        </div>
+
+        <div class="resume-summary-box">
+          <h4>Key Production Projects</h4>
+          <p style="margin-bottom: 8px;"><strong>• DataLens:</strong> AI-powered analytics platform (React, FastAPI, DuckDB, Pandas, Scikit-Learn) with Natural Language-to-SQL querying and automated anomaly detection.</p>
+          <p style="margin-bottom: 8px;"><strong>• Echo Notes:</strong> Meeting intelligence platform (yt-dlp, FFmpeg, Whisper, ChromaDB, Mistral AI, Streamlit) with RAG semantic search.</p>
+          <p><strong>• MindPulse:</strong> Student wellness score prediction with Scikit-Learn, FastAPI, and Pydantic.</p>
+        </div>
+
+        <div class="resume-summary-box">
+          <h4>Industry Experience &amp; Leadership</h4>
+          <p style="margin-bottom: 8px;"><strong>• Machine Learning &amp; GenAI Intern @ Amigo India:</strong> Prototype RAG pipeline with LangChain/LangGraph/ChromaDB.</p>
+          <p><strong>• Treasurer @ Abhivyakti Club:</strong> Budget and financial management for SMS Lucknow.</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="assets/Aman_pandey_resume.pdf" download class="btn btn-primary btn-sm">
+          <span>Download Official PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/agent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
