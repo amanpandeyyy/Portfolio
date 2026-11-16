@@ -35,16 +35,27 @@
       }
     ],
 
-    internship: {
-      role: "Machine Learning & Generative AI Intern",
-      company: "Amigo India",
-      timeline: "June 2026 — July 2026",
-      type: "Remote",
-      highlights: [
-        "Architected an internal prototype Retrieval-Augmented Generation (RAG) pipeline utilizing LangChain, LangGraph, and ChromaDB vector search to optimize context retrieval for production workflows.",
-        "Designed and evaluated prompt engineering strategies across iterative LLM experiments in Jupyter Notebook, improving response reliability and substantially reducing experimentation time."
-      ]
-    },
+    internships: [
+      {
+        role: "Machine Learning Engineer Intern",
+        company: "Coding Clave Development LLP",
+        timeline: "November 2026 — Present",
+        highlights: [
+          "Developing and deploying machine learning pipelines, feature transformation workflows, and predictive models.",
+          "Collaborating on data engineering and end-to-end model evaluation to deliver scalable, production-ready AI solutions."
+        ]
+      },
+      {
+        role: "Machine Learning & Generative AI Intern",
+        company: "Amigo India",
+        timeline: "June 2026 — July 2026",
+        type: "Remote",
+        highlights: [
+          "Architected an internal prototype Retrieval-Augmented Generation (RAG) pipeline utilizing LangChain, LangGraph, and ChromaDB vector search to optimize context retrieval for production workflows.",
+          "Designed and evaluated prompt engineering strategies across iterative LLM experiments in Jupyter Notebook, improving response reliability and substantially reducing experimentation time."
+        ]
+      }
+    ],
 
     leadership: {
       title: "Treasurer — Abhivyakti Club",
@@ -219,10 +230,13 @@
     // 6. Internship & Work Experience
     {
       id: "internship",
-      keywords: ["intern", "internship", "amigo", "experience", "work experience", "job"],
-      reply: () => `💼 <strong>Professional Internship Experience:</strong><br><br>
-        <strong>Machine Learning & Generative AI Intern @ Amigo India</strong> (June 2026 — July 2026, Remote):<br>
-        • Developed an internal prototype <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline utilizing LangChain, LangGraph, and ChromaDB vector search to optimize context retrieval for production workflows.<br>
+      keywords: ["intern", "internship", "internships", "coding clave", "codingclave", "amigo", "experience", "work experience", "job", "companies", "where did he work"],
+      reply: () => `💼 <strong>Professional Experience &amp; Internships:</strong><br><br>
+        1. <strong>Machine Learning Engineer Intern @ Coding Clave Development LLP</strong> (November 2026 — Present):<br>
+        • Developing and deploying machine learning pipelines, predictive modeling, and feature engineering workflows.<br>
+        • Collaborating on data engineering and end-to-end model evaluation to deliver scalable, production-ready AI solutions.<br><br>
+        2. <strong>Machine Learning &amp; Generative AI Intern @ Amigo India</strong> (June 2026 — July 2026, Remote):<br>
+        • Developed an internal prototype <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline utilizing LangChain, LangGraph, and ChromaDB vector search.<br>
         • Formulated and evaluated iterative prompt engineering strategies in Jupyter Notebook, drastically improving response reliability and experimentation speed.`
     },
 
@@ -308,7 +322,7 @@
       ],
       reply: () => `👋 <strong>Aman Pandey</strong> is an aspiring <strong>AI/ML Engineer</strong> and Computer Science Engineering student at SMS Lucknow (2023–2027).<br><br>
         • <strong>Core Focus:</strong> Deep Learning, Generative AI, RAG pipelines, and scalable backend deployment with FastAPI & Docker.<br>
-        • <strong>Experience:</strong> ML & GenAI Intern at Amigo India; 1st Prize Winner at Amigo India Hackathon 2026.<br>
+        • <strong>Experience:</strong> ML Engineer Intern at Coding Clave Development LLP; Ex-ML & GenAI Intern at Amigo India; 1st Prize Winner at Amigo India Hackathon 2026.<br>
         • <strong>Key Projects:</strong> DataLens (AI Data Analyst), Echo Notes (AI Meeting Assistant), and MindPulse (Predictive ML).<br><br>
         Would you like to explore his <strong>projects</strong>, his <strong>internship experience</strong>, or <strong>download his resume</strong>?`
     },
@@ -318,7 +332,7 @@
       id: "greetings",
       keywords: ["hi", "hello", "hey", "good morning", "good evening", "greetings", "help"],
       reply: () => `👋 Hello! I'm <strong>Aman's AI Agent</strong>.<br><br>
-        I can answer questions about Aman's <strong>production projects</strong>, his <strong>Generative AI & RAG work at Amigo India</strong>, his technical skills, or provide his resume and contact info. How can I help you today?`
+        I can answer questions about Aman's <strong>production projects</strong>, his <strong>internships at Coding Clave &amp; Amigo India</strong>, his technical skills, or provide his resume and contact info. How can I help you today?`
     }
   ];
 
@@ -339,7 +353,7 @@
       • <strong>Generative AI &amp; RAG Systems:</strong> LangChain, LangGraph, ChromaDB, OpenAI APIs, Mistral AI.<br>
       • <strong>Machine &amp; Deep Learning:</strong> PyTorch, Scikit-Learn, Transformers, CNNs.<br>
       • <strong>Backend &amp; Data:</strong> FastAPI, Python, DuckDB, Docker.<br><br>
-      He is always eager to take on new technical challenges and adapt quickly! Would you like to check out his flagship project <strong>DataLens</strong>, his internship at <strong>Amigo India</strong>, or <a href="${AMAN_KB.resume_path}" download>download his resume</a>?`;
+      He is always eager to take on new technical challenges and adapt quickly! Would you like to check out his flagship project <strong>DataLens</strong>, his internships at <strong>Coding Clave &amp; Amigo India</strong>, or <a href="${AMAN_KB.resume_path}" download>download his resume</a>?`;
   }
 
   // Default fallback response
@@ -353,7 +367,7 @@
 
     return `No, Aman hasn't worked directly with "<em>${escapeHTML(query)}</em>" yet.<br><br>
       He is, however, an adaptable engineer who is always curious to learn and build in new domains. His proven strengths lie in <strong>Generative AI, RAG pipelines, Deep Learning, and Python/FastAPI backend engineering</strong>.<br><br>
-      Feel free to ask about his recommended project <strong>DataLens</strong>, his internship at <strong>Amigo India</strong>, or connect with him directly!`;
+      Feel free to ask about his recommended project <strong>DataLens</strong>, his internships at <strong>Coding Clave &amp; Amigo India</strong>, or connect with him directly!`;
   }
 
   function escapeHTML(str) {
